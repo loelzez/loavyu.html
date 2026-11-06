@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Surat Cinta</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="floating-hearts" id="floatingHearts" aria-hidden="true"></div>
+  <main class="scene">
+    <!-- Intro -->
+    <section class="screen intro-screen" id="introScreen">
+      <p class="intro-eyebrow">Seseorang punya rahasia untuk disampaikan kepadamu</p>
+      <h1 class="intro-title">Sebuah Surat Untukmu</h1>
+      <p class="intro-sub">Ketuk amplopnya untuk membuka isi hatimu</p>
+      <div class="envelope" id="envelope" role="button" tabindex="0" aria-label="Buka surat cinta">
+        <div class="envelope-back"></div>
+        <div class="letter-preview" id="letterPreview">
+          <span class="preview-seal">❤️</span>
+        </div>
+        <div class="envelope-front" id="envelopeFront"></div>
+        <div class="envelope-flap" id="envelopeFlap"></div>
+        <div class="envelope-shadow"></div>
+      </div>
+      <p class="hint">klik atau ketuk</p>
+    </section>
+         
+    <!-- Letter -->
+    <section class="screen letter-screen hidden" id="letterScreen">
+      <article class="letter-paper" id="letterPaper">
+        <button class="close-btn" id="closeLetter" aria-label="Tutup surat">×</button>
+        <div class="letter-inner">
+          <p class="letter-date">Untuk seseorang yang membuat hari-hariku lebih cerah</p>
+          <h2 class="letter-greeting">Hai Ziefanya,</h2>
+          <div class="letter-body">
+            <p>Aku sudah mencoba mencari kata-kata yang pas, tapi setiap kali melihatmu, semuanya buyar begitu saja. Jadi, aku menulisnya di sini—berharap hatiku bisa berbicara di saat suaraku tak mampu.</p>
+            <p>Ada sesuatu dari cara tersenyummu yang mengubah hari biasa menjadi kenangan terfavoritku. Kamu tidak hanya menerangi ruangan; kamu juga menerangi sesuatu di dalam diriku.</p>
+            <p>Aku menyukaimu. Bukan hanya sedikit, dan bukan hanya untuk sekarang. Aku suka cara tawamu, kepedulianmu, dan bagaimana seluruh duniaku terasa jauh lebih hangat saat kamu ada di dalamnya.</p>
+            <p class="letter-question">Jadi... aku ingin menanyakan sesuatu kepadamu.</p>
+          </div>
+          <p class="letter-signature">Selamanya milikmu,<br /><span class="signature-name">Pemuja Rahasiamu</span></p>
+        </div>
+      </article>
+             
+      <div class="question-card hidden" id="questionCard">
+        <h2 class="question-title">Maukah kamu menjadi kekasihku?</h2>
+        <p class="question-sub">Pilihlah dengan hatimu</p>
+        <div class="question-buttons">
+          <button class="btn btn-yes" id="yesBtn">Mau ❤️</button>
+          <button class="btn btn-no" id="noBtn">Enggak 💔</button>
+        </div>
+        <p class="plea" id="pleaText"></p>
+      </div>
+    </section>
+         
+    <!-- Celebration -->
+    <section class="screen celebration-screen hidden" id="celebrationScreen">
+      <div class="celebration-card">
+        <div class="big-heart">💖</div>
+        <h2 class="celebration-title">Kamu Baru Saja Membuatku<br />Menjadi Orang Paling Bahagia!</h2>
+        <p class="celebration-text">Ini hanyalah permulaan dari sesuatu yang indah. Aku berjanji untuk selalu membuatmu tersenyum, mendengarkanmu, ada untukmu, dan memilihmu—setiap hari.</p>
+        <p class="celebration-sign">Milikmu, sekarang dan selamanya ✨</p>
+        <button class="btn btn-restart" id="restartBtn">Baca suratnya lagi 💌</button>
+      </div>
+      <div class="confetti-container" id="confettiContainer" aria-hidden="true"></div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>Dibuat dengan ❤️ khusus untukmu</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
